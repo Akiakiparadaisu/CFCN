@@ -1,16 +1,35 @@
-\documentclass{ltjsarticle}
-\usepackage{amsmath}
-\usepackage{graphicx}
+\documentclass[a4paper,12pt]{ltjsbook}
 
-\title{はじめてのTeX Git管理}
-\author{田中玲桐}
-\date{\today}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{graphicx}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\centering
 
-\section{はじめに}
-これはGitで管理するTeX文書です。
+\vspace*{6cm}
+
+{\Huge \bfseries 認知神経科学の計算的基礎 \par}
+
+\vspace{2cm}
+
+{\Large 田中玲桐 \par}
+
+\vfill
+
+\end{titlepage}
+
+\chapter*{はじめに}
+\addcontentsline{toc}{chapter}{はじめに}
+
+本書では、脳波（EEG）解析において用いられる代表的な信号処理を整理して、
+それを読み解くのに必要な数学を解説する。
+
+\clearpage
+
+\tableofcontents
+\input{chapter1}
 
 \end{document}
